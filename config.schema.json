@@ -1,0 +1,27 @@
+{
+  "pluginAlias": "GasFire",
+  "pluginType": "accessory",
+  "singular": false,
+  "headerDisplay": "Mertik Maxitrol GV60",
+  "footerDisplay": "Requires Raspberry Pi with relay module wired up to the external panel interface. Run GoFire server on the Pi.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "required": true
+      },
+      "serverIP": {
+        "title": "serverIP",
+        "type": "string",
+        "required": true
+      },
+      "serverPort": {
+        "title": "serverPort",
+        "type": "integer",
+        "required": true
+      }
+    }
+  }
+}
